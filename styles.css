@@ -1,0 +1,612 @@
+/* Belgium font */
+
+@font-face {
+  font-family: 'Belgium';
+  src: url('/assets/fonts/Belgium-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General styling */
+
+body {
+    margin: 0;
+    font-family: 'Belgium', sans-serif;
+    color: white;
+    background-color: #1a1a1a;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    position: relative;
+  }
+
+  .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .logo p {
+    margin: 0;
+    font-size: 12px;
+    color: #fff;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .contact-btn {
+    padding: 8px 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  .contact-btn:hover {
+    background-color: #e67e22;
+    color: #000;
+  }
+
+  /* Hamburger Menu Styles */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .menu-toggle div {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+
+  /* Hide the nav initially for mobile */
+  nav ul {
+    display: flex;
+  }
+
+  /* Mobile Responsive Styles */
+  @media (max-width: 768px) {
+    header {
+      flex-wrap: wrap;
+    }
+
+    /* Hide the nav menu and show hamburger icon */
+    nav ul {
+      flex-direction: column;
+      display: none;
+      width: 100%;
+      background-color: #000;
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+
+    nav ul li {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    /* Show the hamburger icon */
+    .menu-toggle {
+      display: flex;
+    }
+
+    /* Show the menu when the hamburger icon is clicked */
+    nav ul.show {
+      display: flex;
+    }
+  }
+
+/* Hero section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: url('assets/carousel/export_Bg.svg');
+  background-color: #000;
+  background-position: center; /* Center horizontally, align to the top vertically */
+  background-repeat: no-repeat;
+  background-size: auto; /* Prevents scaling */
+  text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.hero-content span {
+    color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #e67e22;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* New Description Section */
+.description {
+    background-color: #1a1a1a; /* Same as the hero background */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    background-image: url('https://www.transparenttextures.com/patterns/black-twill.png'); /* Placeholder for geometric pattern */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.description p {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #e67e22;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.image-section {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.services-section {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 20px;
+    color: #e1e1e1;
+}
+
+h2 {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.collapsible {
+    background-color: transparent;
+    color: orange;
+    cursor: pointer;
+    padding: 10px 0;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.active, .collapsible:hover {
+    color: #ff9800;
+}
+
+.content {
+    display: none;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.content ul {
+    list-style-type: circle;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-section, .services-section {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .image-section {
+        margin-bottom: 20px;
+    }
+}
+
+    /* Max Width Container */
+    .max-width-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+  
+      /* Hover Section */
+      .industries {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 40px 0;
+      }
+  
+      .industry-card {
+        position: relative;
+        background: linear-gradient(to bottom, rgba(255, 136, 0, 0.8), rgba(0, 0, 0, 0.8));
+        padding: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        height: 200px;
+      }
+  
+      .industry-card:hover .card-content {
+        opacity: 0;
+      }
+  
+      .industry-card:hover::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(255, 136, 0, 0.8), rgba(0, 0, 0, 0.8));
+        z-index: 1;
+      }
+  
+      .industry-card .industry-info {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        z-index: 2;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+  
+      .industry-card:hover .industry-info {
+        opacity: 1;
+      }
+  
+      .card-content {
+        transition: opacity 0.3s ease-in-out;
+      }
+  
+      /* Image Carousel Section */
+      .carousel-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 40px auto;
+      }
+  
+      .carousel {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+      }
+  
+      .carousel-slide {
+        min-width: 100%;
+        transition: transform 0.5s ease-in-out;
+      }
+  
+      .prev, .next {
+        background-color: transparent;
+        border: none;
+        font-size: 2em;
+        cursor: pointer;
+        color: #ff8800;
+        z-index: 2;
+      }
+  
+      /* Our Team Section */
+      .our-team-section {
+        padding: 40px;
+        background-color: #1a0d05;
+      }
+  
+      /* Team grid layout */
+      .team-grid {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+  
+      /* Individual team member card */
+      .team-member {
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        max-width: 100%;
+        text-align: center;
+      }
+  
+      /* Styling for the team images */
+      .team-member img {
+        width: 100%;
+        border-radius: 10px;
+      }
+  
+      /* Name styling */
+      .team-member h3 {
+        font-family: 'Times New Roman', serif;
+        font-size: 22px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        color: #ff8800;
+      }
+  
+      /* Title/Position Styling */
+      .team-member p.title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        color: #ffffff;
+      }
+      
+  
+      /* Responsive layout */
+      @media (max-width: 768px) {
+        .team-grid {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+  
+      /* Responsive Design */
+      @media (max-width: 1200px) {
+        .industries {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+  
+      @media (max-width: 768px) {
+        .industries {
+          grid-template-columns: 1fr;
+        }
+      }
+
+       /* ------------------------------------------section -2 --------------------------------------------- */
+
+
+
+ #section-2{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#img-container img{
+    height: 400px;
+    width:100%;
+    object-fit: cover;
+   
+}
+
+
+#aboutus-content{
+    width: 50%;
+}
+
+#about{
+   color: #F97C5A;
+   font-size:2rem;
+   padding-bottom: 10px;
+
+}
+
+#paragraph{
+   color: grey;
+   padding-bottom: 15px;
+   font-size: 1.2rem;
+
+
+}
+
+#see-more-btn{
+    border: none;
+    background-color: transparent;
+    color: #F97C5A;
+    border: 1px solid #F97C5A;
+    padding: 5px 15px;
+    margin-top: 20px;
+  
+}
+
+
+#media-impression{
+   
+    /* height: 200px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#each-div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.count{
+    /* margin-top: 40px;
+    margin-left: 75px; */
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    padding-top: 30px;
+
+}
+
+.tag-name{
+    /* margin-top: 25px;
+    margin-left: 50px; */
+    font-size: 20px;
+    color: grey;
+
+}
+
+#icon i{
+  /* position: relative;
+  top: 10px;
+  left: 70px; */
+  font-size: 20px;
+  color: white;
+}
+
+@media (max-width:600px) {
+    
+ #section-2{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+  
+ #img-container img{
+    height:200px;
+    width:320px;
+    object-fit: cover;
+    padding-top: 10px;
+    align-items: center;
+
+}
+
+    
+#card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#aboutus-content{
+    width: 70%;
+    padding-top: 10px;
+
+}
+
+#paragraph{
+    color: grey;
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+ 
+ 
+ }
+
+
+ #media-impression{
+   
+    /* height: 200px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#each-div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.count{
+    /* margin-top: 40px;
+    margin-left: 75px; */
+    font-size: 13px;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+
+}
+
+.tag-name{
+    /* margin-top: 25px;
+    margin-left: 50px; */
+    font-size: 15px;
+    color: grey;
+
+}
+
+#icon i{
+  /* position: relative;
+  top: 10px;
+  left: 70px; */
+  font-size: 18px;
+  color: white;
+}
+
+
+
+}
