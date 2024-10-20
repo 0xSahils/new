@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Catalyst</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="bg">
     <header>
         <div class="logo">
           <h1>The Catalyst</h1>
@@ -29,12 +34,27 @@
       </header>
 
     <section class="hero">
-        <div class="hero-content">
-            <h2>Transforming Vision into Impact</h2>
-            <p>Your strategic partner in brand building excellence.</p>
-            <p><span>The Catalyst</span> is a public relations firm focused on building influence to positively impact business and the world.</p>
+        <div class="hero-section">
+          <div class="hero-content">
+            <h2>Transforming <br>Vision into Impact</h2>
+            <p class="sub-text" >Your strategic partner in brand building excellence.</p>
+          </div>
+            <p class="below-text"><span>The Catalyst</span> is a public relations firm focused on building influence to positively impact business and the world.</p>
         </div>
     </section>
+
+    <div class="logo-slider" data-v-4ef8651c="">
+      <div class="logos-slide" data-v-4ef8651c="">
+        <img src="https://i.ibb.co/Vv5rkDK/api-partner-verzon.png" data-v-4ef8651c="">
+        <img src="https://i.ibb.co/J399KDg/api-partner-netflix.png" data-v-4ef8651c="">
+        <img src="https://i.ibb.co/TKT0F5L/api-partner-yelp.png" data-v-4ef8651c="">
+        <img src="https://i.ibb.co/HG6KR89/api-partner-adobe.png" data-v-4ef8651c="">
+        <img src="https://i.ibb.co/hMSJ1sg/api-partner-ring.png" data-v-4ef8651c="">
+        <img src="https://i.ibb.co/4RWQcMS/api-partner-nespresso.png" data-v-4ef8651c="">
+      </div>
+    </div>
+    
+    
 
     <footer>
         <h3>Welcome to The Catalyst</h3>
@@ -46,8 +66,9 @@
         <p>Our team of experienced professionals combines media relations, strategic communication, and digital storytelling expertise to deliver impactful outcomes. We start by understanding your brand and its unique story; then, we work with you to amplify your message and ensure it resonates with the right audience.</p>
         <p>At The Catalyst, we understand that each brand has a unique story. We aim to amplify your message and ensure it resonates with the right audience. Whether you're a new business seeking to establish a presence or an established company looking to redefine your image, we provide customized PR solutions that align with your objectives and principles.</p>
     </section>
-
+  </div>
     <div class="container max-width-container">
+
         <div class="image-section">
             <img src="assets\carousel\carousel_1.jpg" alt="Service image">
         </div>
@@ -78,8 +99,8 @@
         </div>
     </div>
 
-    <div class="max-width-container">
-        <h1>Industries We Serve</h1>
+    <div class="max-width-container industries-container">
+        <h2 class="industries-title">We Create News</h2>
         <div class="industries">
           <div class="industry-card">
             <div class="card-content">
@@ -128,24 +149,69 @@
               <p>We bring wellness brands to the forefront with authentic, engaging messaging.</p>
             </div>
           </div>
-    
+          <div class="industry-card">
+            <div class="card-content">
+              <h3>Wellness</h3>
+            </div>
+            <div class="industry-info">
+                <div class="card-content-hover">
+                    <h3>Fashion</h3>
+                </div>
+              <p>We bring wellness brands to the forefront with authentic, engaging messaging.</p>
+            </div>
+          </div>
+          <div class="industry-card">
+            <div class="card-content">
+              <h3>Wellness</h3>
+            </div>
+            <div class="industry-info">
+                <div class="card-content-hover">
+                    <h3>Fashion</h3>
+                </div>
+              <p>We bring wellness brands to the forefront with authentic, engaging messaging.</p>
+            </div>
+          </div>
+          <div class="industry-card">
+            <div class="card-content">
+              <h3>Wellness</h3>
+            </div>
+            <div class="industry-info">
+                <div class="card-content-hover">
+                    <h3>Fashion</h3>
+                </div>
+              <p>We bring wellness brands to the forefront with authentic, engaging messaging.</p>
+            </div>
+          </div>
+          <div class="industry-card">
+            <div class="card-content">
+              <h3>Wellness</h3>
+            </div>
+            <div class="industry-info">
+                <div class="card-content-hover">
+                    <h3>Fashion</h3>
+                </div>
+              <p>We bring wellness brands to the forefront with authentic, engaging messaging.</p>
+            </div>
+          </div>
           <!-- Add the rest of the industries similarly -->
         </div>
       </div>
 
     <!-- Image Carousel Section -->
-    <h2>We Create News</h2>
-    <div class="carousel-container">
-      <button class="prev">❮</button>
-      <div class="carousel">
-        <div class="carousel-slide">
-          <img src="assets/carousel/carousel_1.jpg" alt="Slide 1" style="width:100%;">
+    <div class="image-carousel-container">
+      <h2>We Create News</h2>
+      <div class="carousel-container">
+        <button class="prev">❮</button>
+        <div class="carousel">
+          <div class="carousel-slide">
+            <img src="assets/carousel/carousel_1.jpg" alt="Slide 1" style="width:100%;">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/carousel/carousel_1.jpg" alt="Slide 2" style="width:100%;">
+          </div>
         </div>
-        <div class="carousel-slide">
-          <img src="assets/carousel/carousel_1.jpg" alt="Slide 2" style="width:100%;">
-        </div>
+        <button class="next">❯</button>
       </div>
-      <button class="next">❯</button>
     </div>
 
     <!-- Our Team Section -->
@@ -196,10 +262,15 @@
 
     const mobileMenu = document.getElementById('mobile-menu');
     const navList = document.getElementById('nav-list');
+    const nav = document.getElementsByTagName("nav")[0];
 
     mobileMenu.addEventListener('click', function() {
     navList.classList.toggle('show');
+    nav.classList.toggle('show');
     });
+
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logo-slider").appendChild(copy);
 
     let currentIndex = 0;
     const slides = document.querySelectorAll('.carousel-slide');
