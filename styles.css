@@ -2,14 +2,8 @@
 
 @font-face {
   font-family: 'Belgium';
-  src: url('/assets/fonts/Belgium-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/Belgium-Regular.otf') format('opentype');
   font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('/assets/fonts/Futura-Book.ttf') format('truetype');
-  font-weight: normal;
   font-style: normal;
 }
 
@@ -18,6 +12,7 @@
 body {
     margin: 0;
     font-family: 'Belgium', sans-serif;
+    font-weight: 200;
     color: white;
     background-color: #000000;
 }
@@ -33,6 +28,8 @@ body {
   z-index: 1;
   padding: 0px 0px 0px 20px;
   padding-bottom: 15vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -41,7 +38,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: relative;
+    max-width: 1200px;
+    top: 33px;
+    left: 120px;
+    border-radius: 10px;
+    border: 1px;
+    opacity: 0px;
+    background: #1A1C1FCC;
+    border: 1px solid #404040;
   }
 
   .logo img {
@@ -66,6 +70,12 @@ header {
     margin-left: 20px;
   }
 
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
   nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -74,15 +84,12 @@ header {
 
   .contact-btn {
     padding: 8px 16px;
-    border: 1px solid #fff;
+    background-color: #f47a5b;
     border-radius: 5px;
   }
 
   .contact-btn:hover {
-    background-color: #f47a5b;
-    color: #ffffff;
-    border: 0px;
-    margin: 1px;
+    color: #000;
   }
 
   /* Hamburger Menu Styles */
