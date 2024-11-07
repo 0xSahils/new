@@ -927,3 +927,88 @@ h2 {
         transform: translateX(-100%);
     }
 }
+
+
+/* ---------------------------Last --  Sections----------------- */
+
+
+
+
+.group-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.5%;
+}
+
+.we-create-news-section h2{
+  text-align: center;
+}
+
+
+
+
+/* we create news section */
+
+
+.image-container-1{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-container-1 img{
+  width: 590px;
+  height: 401px;
+}
+
+.image-container-2{
+  /* background-color: green; */
+  height: 500px;
+  padding-top: 50px;
+}
+
+
+.div-container{
+  /* padding-top: 50px;  */
+  /* height: 301px; */
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10%;
+}
+
+.left-div{
+  width: 50%;
+  background-color: #FA7A5B;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  height: 351px;
+
+}
+
+.text-container{
+  /* background-color: grey; */
+  height: 200px;
+  width: 60%;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.text{
+ 
+  font-size: 30px;
+  /* padding-left: 50px; */
+  text-align: left;
+}
+
+.left-div button{
+  height: 50px;
+  width: 200px;
+  margin-left: 100px;
+  background-color: #404040;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 7px;
+}
