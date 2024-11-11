@@ -957,6 +957,7 @@ h2 {
     width: 183px;
     height: 83px;
     margin: 0 40px;
+    object-fit: contain;
 }
 
 
