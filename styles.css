@@ -15,6 +15,9 @@ body {
     font-weight: 300;
     color: white;
     background-color: #000000;
+    h1, h2, h3 {
+      font-family: 'BelgiumFont', sans-serif;
+  }
 }
 
 .bg {
@@ -34,9 +37,9 @@ body {
 header {
   display: flex;
   font-family: 'Poppins',sans-serif;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px 50px ;
+  padding: 20px 80px ;
   border-radius: 10px;
   border: 1px;
   opacity: 0px;
@@ -103,18 +106,20 @@ header {
 
   .hero-contact-btn{
     font-family: "Outfit", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 400;
     padding: 8px 16px;
     background-color: #f47a5b;
     border-radius: 85px;
     width: Hug (310px)px;
     height: Fixed (64px)px;
-    padding: 4px 32px 8px 32px;
+    padding: 10px 32px 10px 32px;
     gap: 10px;
     border-radius: 85px ;
     border: 1px;
     opacity: 0px;
-
+    letter-spacing: 0.1em;
+   
   }
 
   /* Hamburger Menu Styles */
@@ -200,7 +205,7 @@ header {
   color: #ffffff;
   margin-bottom: 10px;
   text-align: center;
-  line-height: 1.25;
+  line-height: 1;
 }
 
 .hero-section {
@@ -208,13 +213,16 @@ header {
   flex-direction: column;
   justify-content: space-between;
   /* height: 30%; */
+  margin-bottom: 50px;
+  
 }
 
 .sub-text {
   font-family: 'Poppins', sans-serif;
   font-size: 28px; /* Large font for desktop */
   max-width: 811px;
-  margin: 20px auto; /* Add some vertical spacing */
+  /* margin: 30px auto; */
+  margin-bottom: 40px;
   line-height: 1.5;
   text-align: center; 
 }
@@ -426,6 +434,7 @@ h2 {
 }
 
 .services{
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -583,8 +592,8 @@ h2 {
         background: linear-gradient(
             180deg,
             rgba(2, 0, 36, 0) 0%,
-            rgba(121, 67, 9, 1) 35%,
-            rgba(255, 119, 0, 1) 100%
+            rgba(121, 67, 9, 1) 55%,
+            #f47a5b 100%
         );
         z-index: 1;
     }
@@ -967,13 +976,31 @@ h2 {
 
 
 
-.group-img{
+/* Container for the group image */
+.group-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 2.5%;
+  width: 100%;
 }
 
+/* Inner container styling */
+.group-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px; /* Controls the container's max width */
+  width: 100%;
+}
+
+/* Image styling */
+.responsive-img {
+  width: 100%; /* Makes image responsive */
+  max-width: 1200px; /* Sets max width for the image */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures the image doesn’t get cropped */
+}
 .we-create-news-section h2{
   text-align: center;
 }
@@ -1026,13 +1053,14 @@ h2 {
   width: 60%;
   margin-left: 100px;
   margin-top: 50px;
+  font-weight: 500;
 }
 
 .text{
- 
   font-size: 30px;
   /* padding-left: 50px; */
   text-align: left;
+  
 }
 
 .left-div button{
@@ -1081,13 +1109,15 @@ h2 {
 h1 {
   font-size: 2em;
   margin-bottom: 20px;
+  font-family: ;
 }
 
 h1 .highlight {
-  color: #f48c42;
+  color: #f47a5b;
 }
 
 .about-us{
+  margin-top: 60px;
   margin-bottom: 50px;
   max-width: 500px;
 }
@@ -1108,7 +1138,7 @@ h1 .highlight {
 
 .services .service-cards {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   margin-top: 30px;
 }
 
@@ -1119,7 +1149,7 @@ h1 .highlight {
 
 .services-header{
   display: flex;
-  /* width: 100%; */
+  width: 100%;
   justify-content: space-between;
   max-width: 1200px;
   gap: 10px;
@@ -1130,7 +1160,7 @@ h1 .highlight {
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  align-content: center;
+  align-content: start;
   align-items: center;
   text-align: left;
 }
@@ -1167,7 +1197,7 @@ h1 .highlight {
 }
 
 .card h2 {
-  color: #f48c42;
+  color: #f47a5b;
   margin-bottom: 10px;
   font-size: 24px;
 }
