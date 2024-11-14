@@ -1,8 +1,4 @@
-/* Belgium font */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @font-face {
   font-family: "Belgium";
@@ -52,7 +48,7 @@ header {
   background: #1a1c1fcc;
   border: 1px solid #404040;
   margin-top: 20px;
-  width: 1200px;
+  width:1000px;
 }
 
 .logo img {
@@ -84,13 +80,13 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 a {
   color: #fff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 nav ul li a {
@@ -139,6 +135,94 @@ nav ul li a {
   height: 2px;
   background-color: #fff;
   margin: 5px 0;
+}
+
+/* General Section Styles */
+.services {
+  padding: 2.5rem 0;
+}
+.services-card-div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.services-header {
+  display: flex;
+  justify-content: start; 
+  align-items: center;
+  border: 2px solid #f47a5b; 
+  border-radius: 50px;
+  padding: 10px 20px; 
+  width: 130px;
+  font-family: "BelgiumFont", sans-serif;
+}
+
+.services-title {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+/* Header Text */
+.services-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.services-intro h1 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.highlight {
+  color: #f47a5b;
+  padding: 0 0.5rem;
+}
+
+/* Navigation Buttons */
+.swiper-navigation-container {
+  display: flex;
+  margin-top: 1rem;
+}
+.swiper-button-next {
+  margin-left: 0.5rem;
+}
+
+/* Swiper Container */
+.swiper {
+  margin-top: 1rem;
+}
+.swiper-wrapper {
+  display: flex;
+}
+.card {
+  max-width: fit-content;
+  text-align: left;
+  margin: 0 0.5rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-image {
+  width: 100%;
+  object-fit: cover;
+  height: 12rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.card-title {
+  color: #f47a5b;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.card-description {
+  color: #a0aec0;
+  font-size: 0.875rem;
+}
+
+/* Optional Swiper Pagination */
+.swiper-pagination {
+  margin-top: 1rem;
 }
 
 /* Hide the nav initially for mobile */
@@ -920,10 +1004,13 @@ h2 {
   padding-top: 30px;
   white-space: nowrap;
   position: relative;
+  opacity: 0.5;
+  padding-bottom: 30px;
 }
 
 .logos-slide {
-  display: inline-flex;
+  display: flex;
+  gap: 40px; /* Spacing between logos */
   animation: slide 45s linear infinite;
 }
 
@@ -932,14 +1019,13 @@ h2 {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% - 40px)); /* Smooth loop */
   }
 }
 
-.logos-slide img {
+.logo-img {
   width: 183px;
   height: 83px;
-  margin: 0 40px;
   object-fit: contain;
 }
 
@@ -1159,7 +1245,7 @@ h1 .highlight {
 .swiper-button-prev {
   margin-right: -10px; /* Slight overlap */
   position: relative;
-  top: 27px;
+  top: 9px;
   left: -85px;
 }
 
