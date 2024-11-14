@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -26,7 +30,7 @@
         </div>
         <nav>
           <ul id="nav-list">
-            <li><a href="#aboutussection">About Us</a></li>
+            <li class="bg-black"><a href="#aboutussection">About Us</a></li>
             <li><a href="#servicessection">Services</a></li>
             <li><a href="#">Our Work</a></li>
             <li><a href="#teamsection">Our Team</a></li>
@@ -45,30 +49,24 @@
             </div>
         </div>
     </section>
-    <div class="logo-slider" data-v-4ef8651c="">
-        <!-- <div class="logos-slide" data-v-4ef8651c="">
-          <img src="https://i.ibb.co/Vv5rkDK/api-partner-verzon.png" data-v-4ef8651c="">
-          <img src="https://i.ibb.co/J399KDg/api-partner-netflix.png" data-v-4ef8651c="">
-          <img src="https://i.ibb.co/TKT0F5L/api-partner-yelp.png" data-v-4ef8651c="">
-          <img src="https://i.ibb.co/HG6KR89/api-partner-adobe.png" data-v-4ef8651c="">
-          <img src="https://i.ibb.co/hMSJ1sg/api-partner-ring.png" data-v-4ef8651c="">
-          <img src="https://i.ibb.co/4RWQcMS/api-partner-nespresso.png" data-v-4ef8651c="">
-        </div> -->
-        <div class="logos-slide" data-v-4ef8651c="">
-          <img src="./assets/logos/ajmal.png" data-v-4ef8651c="">
-          <img src="./assets/logos/geetanjali.png" data-v-4ef8651c="">
-          <img src="./assets/logos/global.png" data-v-4ef8651c="">
-          <img src="./assets/logos/haruharu.png" data-v-4ef8651c="">
-          <img src="./assets/logos/hrx.png" data-v-4ef8651c="">
-          <img src="./assets/logos/kera.png" data-v-4ef8651c="">
-          <img src="./assets/logos/kiehl.png" data-v-4ef8651c="">
-          <img src="./assets/logos/kiro.png" data-v-4ef8651c="">
-          <img src="./assets/logos/lancome.png" data-v-4ef8651c="">
-          <img src="./assets/logos/looks.png" data-v-4ef8651c="">
-          <img src="./assets/logos/Screenshot 2024-11-11 at 10.22.36.png" data-v-4ef8651c="">
-          <img src="./assets/logos/veen.png" data-v-4ef8651c="">
-        </div>
-    </div>
+    <div class="overflow-hidden opacity-50 py-8 relative logo-slider">
+      <div class="inline-flex space-x-8 logos-slide whitespace-nowrap">
+          <img src="./assets/logos/ajmal.png" class="h-12" />
+          <img src="./assets/logos/geetanjali.png" class="h-12" />
+          <img src="./assets/logos/global.png" class="h-12" />
+          <img src="./assets/logos/haruharu.png" class="h-12" />
+          <img src="./assets/logos/hrx.png" class="h-12" />
+          <img src="./assets/logos/kera.png" class="h-12" />
+          <img src="./assets/logos/kiehl.png" class="h-12" />
+          <img src="./assets/logos/kiro.png" class="h-12" />
+          <img src="./assets/logos/lancome.png" class="h-12" />
+          <img src="./assets/logos/looks.png" class="h-12" />
+          <img src="./assets/logos/Screenshot 2024-11-11 at 10.22.36.png" class="h-12" />
+          <img src="./assets/logos/veen.png" class="h-12" />
+      </div>
+  </div>
+  
+  
   </div>
     <!-- section for clients -->
 
@@ -85,37 +83,57 @@
       <img src="assets/about-us.png" alt="Team working on brand strategy" class="about-image">
     </div>
   </div>
+
+  
     
-      <section id="servicessection" class="services">
-        <div class="servies-card-div">
-          <div class="services-header">
-            <div class="h3">Our services</div>
-            <div class="next-previous">
-              <img class="previousCarsousel" src="assets/Group 5.svg"/>
-              <img class="nextCarsousel" src="assets/Group 4.svg"/>
-            </div>
-          </div>
-          <h1>Our <span class="highlight">suite</span> of brand building solutions</h1>
-          <div class="service-cards">
-          <div class="card">
-            <img src="assets/services/media-relations.png" alt="Media Relations">
-            <h2>Media relations</h2>
-            <p>We connect brands with journalists, crafting impactful presences and managing media inquiries for coverage.</p>
-          </div>
-          <div class="card">
-            <img src="assets/services/crisis-management.png" alt="Crisis Management">
-            <h2>Crisis management</h2>
-            <p>We develop crisis communication plans, offering real-time support and managing narratives to protect client reputations.</p>
-          </div>
-          <div class="card">
-            <img src="assets/services/strategic-communications.png" alt="Strategic Communications">
-            <h2>Strategic communications</h2>
-            <p>We develop communication strategies aligned with business objectives, emphasizing message development, audience analysis, and engagement.</p>
-          </div>
-          
+  <section id="servicessection" class="services py-10">
+    <div class="services-card-div max-w-screen-lg mx-auto px-4">
+      <div class="services-header flex justify-between items-center">
+        <div class="h3 bg-[#f47a5b] text-white px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm uppercase font-semibold opacity-80">
+          Our Services
         </div>
       </div>
-      </section>
+      
+      <h1 class="text-center text-2xl sm:text-3xl font-bold mt-4 sm:mt-6">
+        Our <span class="text-[#f47a5b] px-1 sm:px-2">suite</span> of brand building solutions
+      </h1>
+
+      <!-- Navigation buttons container aligned to the right -->
+      <div class="swiper-navigation-container flex mt-4 sm:mt-6">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next ml-2"></div>
+      </div>
+
+      <!-- Swiper Container -->
+      <div class="swiper mt-4 sm:mt-6">
+        <div class="swiper-wrapper">
+          <!-- Responsive Swiper Card -->
+        <div class="swiper-slide card max-w-fit sm:max-w-[250px] md:max-w-[300px] text-left mx-2 sm:mx-3 p-3 sm:p-4 rounded-lg shadow-lg overflow-hidden">
+  <img src="assets/services/media-relations.png" alt="Media Relations" class="w-full object-cover h-40 sm:h-48 rounded-lg mb-3 sm:mb-4">
+  <h2 class="text-[#f47a5b] text-lg sm:text-xl md:text-2xl mb-2">Media relations</h2>
+  <p class="text-gray-400 text-xs sm:text-sm md:text-base">We connect brands with journalists, crafting impactful presences and managing media inquiries for coverage.</p>
+</div>
+
+          <div class="swiper-slide card max-w-fit sm:max-w-[250px] md:max-w-[300px] text-left mx-2 sm:mx-3 p-3 sm:p-4 rounded-lg shadow-lg">
+            <img src="assets/services/crisis-management.png" alt="Crisis Management" class="w-full object-cover h-40 sm:h-48 rounded-lg mb-3 sm:mb-4">
+            <h2 class="text-[#f47a5b] text-lg sm:text-xl md:text-2xl mb-2">Crisis management</h2>
+            <p class="text-gray-400 text-xs sm:text-sm md:text-base">We develop crisis communication plans, offering real-time support and managing narratives to protect client reputations.</p>
+          </div>
+
+          <div class="swiper-slide card max-w-fit sm:max-w-[250px] md:max-w-[300px] text-left mx-2 sm:mx-3  p-3 sm:p-4 rounded-lg shadow-lg">
+            <img src="assets/services/strategic-communications.png" alt="Strategic Communications" class="w-full object-cover h-40 sm:h-48 rounded-lg mb-3 sm:mb-4">
+            <h2 class="text-[#f47a5b] text-lg sm:text-xl md:text-2xl mb-2">Strategic communications</h2>
+            <p class="text-gray-400 text-xs sm:text-sm md:text-base">We develop communication strategies aligned with business objectives, emphasizing message development, audience analysis, and engagement.</p>
+          </div>
+        </div>
+
+        <!-- Pagination (optional) -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+
 
 
       <div class="max-width-container industries-container">
@@ -311,7 +329,7 @@
     
     
     
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
 
     var coll = document.getElementsByClassName("collapsible");
@@ -350,33 +368,33 @@
 
     // Select all carousel containers
     // Select all carousel containers
-    document.querySelectorAll('.carousel-container').forEach(carouselContainer => {
-    let currentIndex = 0; // Initialize index for each carousel
-    const slides = carouselContainer.querySelectorAll('.carousel-slide');
-    const totalSlides = slides.length;
-    const carousel = carouselContainer.querySelector('.carousel');
-
-    // Add event listener for the next button
-    carouselContainer.querySelector('.next').addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        updateCarousel();
-    });
-
-    // Add event listener for the prev button
-    carouselContainer.querySelector('.prev').addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-        updateCarousel();
-    });
-
-    // Function to update the carousel position
-    function updateCarousel() {
-        const offset = -currentIndex * 100; // Calculate the offset for sliding
-        carousel.style.transform = `translateX(${offset}%)`; // Move the carousel
-    }
-
-    // Initialize the carousel by setting the first slide position
-    updateCarousel();
-    });
+    const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween:30
+      },
+    },
+  });
+</script>
 
 
     </script>
