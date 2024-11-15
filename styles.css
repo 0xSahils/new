@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  font-family: "Belgium", sans-serif;
+  /* font-family: "Belgium", sans-serif; */
   font-weight: 300;
   color: white;
   background-color: #000000;
@@ -19,7 +19,7 @@ body {
   h1,
   h2,
   h3 {
-    font-family: "BelgiumFont", sans-serif;
+    font-family: "Belgium", sans-serif;
   }
 }
 
